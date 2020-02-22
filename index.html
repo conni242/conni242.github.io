@@ -21,14 +21,12 @@
         </script>
         <script>
         $Lightning.use("c:foefeapp",    // name of the Lightning app
-            function() {       
-                alert("hi");            // Callback once framework and app loaded
+            function() {                  // Callback once framework and app loaded
                 $Lightning.createComponent(
-                    "c:testOut", // top-level component of your app
+                    "c:devtest", // top-level component of your app
                     { },                  // attributes to set on the component when created
                     "lightningLocator2",   // the DOM location to insert the component
                     function(cmp) {
-                        alert("loaded!"); 
                         // callback when component is created and active on the page
                     }
                 );
