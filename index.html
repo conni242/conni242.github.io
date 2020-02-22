@@ -2,25 +2,25 @@
 <html>
 <body>
     <h1>here Comes my LWC!</h1>
-<script src="https://sandbox1-betreuerecke.cs83.force.com/anmeldung/lightning/lightning.out.js"></script>
+    <script src="https://sandbox1-betreuerecke.cs83.force.com/anmeldung/lightning/lightning.out.js"></script>
 
-<script>
-    $Lightning.use("c:lightningOut",    // name of the Lightning app
-        function() {                  // Callback once framework and app loaded
-            $Lightning.createComponent(
-                "c:devtest", // top-level component of your app
-                { },                  // attributes to set on the component when created
-                "lightningLocator",   // the DOM location to insert the component
-                function(cmp) {
-                    // callback when component is created and active on the page
-                }
-            );
-        },
-        'https://sandbox1-betreuerecke.cs83.force.com/anmeldung/'  // Community endpoint
-    );
-</script>
-<div id="lightningLocator">
-</div>
+    <script>
+        $Lightning.use("c:lightningOut",    // name of the Lightning app
+            function() {                  // Callback once framework and app loaded
+                $Lightning.createComponent(
+                    "c:CampFeed", // top-level component of your app
+                    { },                  // attributes to set on the component when created
+                    "lightningLocator",   // the DOM location to insert the component
+                    function(cmp) {
+                        // callback when component is created and active on the page
+                    }
+                );
+            },
+            'https://sandbox1-betreuerecke.cs83.force.com/anmeldung/'  // Community endpoint
+        );
+    </script>
+    <div id="lightningLocator">
+    </div>
 
 </body>
 </html>
